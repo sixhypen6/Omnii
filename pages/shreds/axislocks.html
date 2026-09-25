@@ -47,7 +47,7 @@
             rotation of a part, which lets you use it as a base for aiming.</p>
         <p>There are two categories of axis lock, preventative and correctional. Some are stronger than others.</p>
 
-
+        <!-- When will the Table of Contents be fixeddd !-->
         <nav class="toc-box" aria-label="Contents">
             <div class="toc-title">Contents</div>
             <ul>
@@ -97,7 +97,7 @@
             </table>
         </div>
 
-        <section id="#1x1Cores"></section>
+        <section id="#Gyro"></section>
         <h3>Gyro</h3>
         <p>Gyro axis lock simply requires the use of a gyro block, which has the <a
                 href="https://create.roblox.com/docs/reference/engine/classes/BodyGyro">BodyGyro</a> function which
@@ -111,6 +111,7 @@
             activated mouse guided balljoint. It doesn't work off of tnt/gun/cutter/etc deletion.
             The balljoint becomes an axis lock because of the mouse tracking getting disabled, it's slightly stronger
             than gyro but not by much.</p>
+        <!-- The one with 1.985 tnt should be on balljoint axis lock aswell !-->
         <section id="#1x1Cores"></section>
         <h3>Void</h3>
         <p>Void axis lock is when you stretch out any form of <strong>non teleporting constraint</strong> past its pull
@@ -123,6 +124,9 @@
             meant to spin to normally.
             In that one specific axis it still has preventative axis lock but not corrective, which is why this form of
             axis lock is best made when using 3 different motors pointing at all 3 axes.</p>
+        <!-- Needs more testing but it seems only the main build needs to be ~200k studs far, even having the module and constraint connected still has it work!-->
+        <p>This type of axis lock is also able to be made through other methods that involves stretching a constraint
+           like how regular void axis lock would.</p>
 
         <section id="#1x1Cores"></section>
         <h2>Preventative Axis Locks</h2>
@@ -145,6 +149,10 @@
                         <td><span class="wiki-stat wiki-stat-medium">Medium</span></td>
                     </tr>
                     <tr>
+                        <td>Motor2</td>
+                        <td><span class="wiki-stat wiki-stat-medium">Medium</span></td>
+                        <td><span class="wiki-stat wiki-stat-low">Very Low</span></td>
+                    <tr>
                         <td>Torque Lock</td>
                         <td><span class="wiki-stat wiki-stat-high">Very High</span></td>
                         <td><span class="wiki-stat wiki-stat-low">High</span></td>
@@ -161,6 +169,13 @@
             It's made by offsetting 3 or more parts of equal mass an equal distance apart from the center of your build,
             which makes it so rotating the central part holding those other parts require massive amounts of torque.
             If paired with a gyro block it can be literally untwistable.</p>
+
+        <section id="#1x1Balljoint"></section>
+        <h3>Motor2</h3>
+        <p>Previously called Hyper Lock, This Axis Lock utilizes how Motor2s accidentally prevent rotation in other
+            directions when their MaxAngle is at a low value. This axis lock does tilt your build with decent force when you
+            move your mouse a lot. It is more noticeable whenever you have a ton of this axis lock.
+            A way to counter this is using <a href="axislocks.html#Gyro">Gyros.</a></p>
 
         <section id="#1x1Cores"></section>
         <h3>ANO</h3>
